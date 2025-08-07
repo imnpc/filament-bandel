@@ -3,9 +3,9 @@
 namespace Widiu7omo\FilamentBandel\Actions;
 
 use Filament\Forms\Components\Textarea;
-use Filament\Tables\Actions\BulkAction;
+use Filament\Actions\BulkAction;
 use Illuminate\Database\Eloquent\Collection;
-use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\DatePicker;
 use Filament\Actions\Concerns\CanCustomizeProcess;
 
 class BanBulkAction extends BulkAction
@@ -48,8 +48,8 @@ class BanBulkAction extends BulkAction
    public function getFormSchema(): array
    {
        return [
-           Textarea::make('comment')->rows(4),
-           DateTimePicker::make('expired_at')->label(__('Expires At')),
+           Textarea::make('comment')->label(__('filament-bandel::translations.comment'))->rows(4),
+           DatePicker::make('expired_at')->label(__('filament-bandel::translations.expired_at')),
        ];
    }
 }

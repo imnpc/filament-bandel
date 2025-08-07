@@ -3,7 +3,7 @@
 namespace Widiu7omo\FilamentBandel\Actions;
 
 use Filament\Actions\Concerns\CanCustomizeProcess;
-use Filament\Tables\Actions\BulkAction;
+use Filament\Actions\BulkAction;
 use Illuminate\Database\Eloquent\Collection;
 
 class UnbanBulkAction extends BulkAction

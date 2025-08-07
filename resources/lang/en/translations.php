@@ -8,5 +8,7 @@ return [
     'bulk-ban' => 'Ban Models',
     'bulk-unban' => 'Unban Models',
     'bulk-ban-success' => 'Models ware banned!',
-    'bulk-unban-success' => 'Models were unbanned!'
+    'bulk-unban-success' => 'Models were unbanned!',
+    'comment' => 'Comment',
+    'expired_at' => 'Expires At'
 ];

@@ -2,7 +2,7 @@
 
 namespace Widiu7omo\FilamentBandel\Actions;
 
-use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Textarea;
 use Filament\Actions\Action;
 use Illuminate\Database\Eloquent\Model;
@@ -47,8 +47,8 @@ class BanAction extends Action
     public function getFormSchema(): array
     {
         return [
-            Textarea::make('comment')->rows(4),
-            DateTimePicker::make('expired_at')->label(__('Expires At')),
+            Textarea::make('comment')->label(__('filament-bandel::translations.comment'))->rows(4),
+            DatePicker::make('expired_at')->label(__('filament-bandel::translations.expired_at')),
         ];
     }
 }
