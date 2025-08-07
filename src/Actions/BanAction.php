@@ -4,7 +4,7 @@ namespace Widiu7omo\FilamentBandel\Actions;
 
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Textarea;
-use Filament\Tables\Actions\Action;
+use Filament\Actions\Action;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Actions\Concerns\CanCustomizeProcess;
 use Filament\Tables\Table;
@@ -28,7 +28,7 @@ class BanAction extends Action
 
         $this->icon('heroicon-o-lock-closed');
 
-        $this->form(function (Model $record){
+        $this->schema(function (Model $record){
             return $this->getFormSchema();
         });
 
