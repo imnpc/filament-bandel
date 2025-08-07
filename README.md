@@ -18,7 +18,7 @@ We are using [laravel-ban by cybercog](https://github.com/cybercog/laravel-ban) 
 You can install the package via composer:
 
 ```bash
-composer require widiu7omo/filament-bandel
+composer require imnpc/filament-bandel
 ```
 
 You can publish and run the migrations with:
